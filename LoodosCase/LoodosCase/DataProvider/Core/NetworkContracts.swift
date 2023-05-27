@@ -48,4 +48,3 @@ extension BaseClientGenerator {
         return request
     }
 }
-
