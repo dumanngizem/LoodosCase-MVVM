@@ -8,4 +8,22 @@
 import Foundation
 
 //MARK: - Contracts
-protocol SplashViewModelContracts {}
+protocol SplashViewModelContracts {
+    var routes: SplashViewModelRoute? { get set }
+    var output: SplashViewModelOutput? { get set }
+   
+    func viewDidLoad()
+    func loodosButtonTapped()
+}
+
+// MARK: - Routes
+protocol SplashViewModelRoute: AnyObject {
+    func pushHome()
+}
+
+//MARK: - Outputs
+protocol SplashViewModelOutput: AnyObject {
+    func showConnectionError(message: String)
+    func remoteConfigration()
+}
+
