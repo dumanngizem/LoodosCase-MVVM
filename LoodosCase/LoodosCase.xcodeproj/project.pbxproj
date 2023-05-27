@@ -50,6 +50,7 @@
 		63AE267E2A22698900B75709 /* RatingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE267D2A22698900B75709 /* RatingResponse.swift */; };
 		63AE26802A2269AA00B75709 /* MovieDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE267F2A2269AA00B75709 /* MovieDataResponse.swift */; };
 		63AE26822A2269C800B75709 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE26812A2269C800B75709 /* SearchResponse.swift */; };
+		63AE268E2A229BFE00B75709 /* loading-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 63AE268D2A229BFE00B75709 /* loading-animation.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		63AE267D2A22698900B75709 /* RatingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingResponse.swift; sourceTree = "<group>"; };
 		63AE267F2A2269AA00B75709 /* MovieDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDataResponse.swift; sourceTree = "<group>"; };
 		63AE26812A2269C800B75709 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		63AE268D2A229BFE00B75709 /* loading-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "loading-animation.json"; sourceTree = "<group>"; };
 		D812664DC942CC24B60DF788 /* Pods-LoodosCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosCase.debug.xcconfig"; path = "Target Support Files/Pods-LoodosCase/Pods-LoodosCase.debug.xcconfig"; sourceTree = "<group>"; };
 		E72055BB611B78F9F5390BA9 /* Pods-LoodosCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosCase.release.xcconfig"; path = "Target Support Files/Pods-LoodosCase/Pods-LoodosCase.release.xcconfig"; sourceTree = "<group>"; };
 		F005549E47B0825C6693EB52 /* Pods_LoodosCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoodosCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -271,6 +273,7 @@
 		63AE263C2A2232DB00B75709 /* Lotties */ = {
 			isa = PBXGroup;
 			children = (
+				63AE268D2A229BFE00B75709 /* loading-animation.json */,
 				63AE263D2A2232F600B75709 /* loading-lottie.json */,
 			);
 			path = Lotties;
@@ -453,6 +456,7 @@
 			files = (
 				634A0B2C2A21E9EF00B751E4 /* LaunchScreen.storyboard in Resources */,
 				634A0B292A21E9EF00B751E4 /* Assets.xcassets in Resources */,
+				63AE268E2A229BFE00B75709 /* loading-animation.json in Resources */,
 				632BD11D2A220A56002331D0 /* GoogleService-Info.plist in Resources */,
 				63AE263E2A2232F600B75709 /* loading-lottie.json in Resources */,
 			);

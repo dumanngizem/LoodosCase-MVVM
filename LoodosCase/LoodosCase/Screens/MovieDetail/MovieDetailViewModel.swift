@@ -21,6 +21,7 @@ final class MoviesDetailViewModel: MovieDetailViewModelContracts {
     }
     
     func viewDidLoad() {
+        getMovieDetail()
     }
 }
 
@@ -37,4 +38,18 @@ extension MoviesDetailViewModel {
 
 // MARK: - Requests
 extension MoviesDetailViewModel {
+    
+    private func getMovieDetail() {
+        guard let imdbId = imdbId else { return }
+        repository.getMovieDetail(imdbId: imdbId) { [weak self] result in
+            guard let self = self else { return }
+            switch result {
+            case .success(let response):
+                self.movieData = response
+                self.output?.notifyResponse(data: response)
+            case .failure(let error):
+                self.output?.showRequestError(message: error.localizedDescription)
+            }
+        }
+    }
 }

@@ -22,4 +22,6 @@ protocol MovieDetailViewModelRoute: AnyObject {
 
 //MARK: - Outputs
 protocol MovieDetailViewModelOutput: AnyObject {
+    func showRequestError(message: String)
+    func notifyResponse(data: MovieDataResponse?)
 }

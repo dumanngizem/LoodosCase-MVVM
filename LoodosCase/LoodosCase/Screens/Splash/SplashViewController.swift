@@ -16,8 +16,8 @@ class SplashViewController: UIViewController {
     
     private let loodosButton: UIButton = {
        let button = UIButton()
-        button.setTitleColor(.white, for: .normal)
-        button.setTitleColor(.white, for: .highlighted)
+        button.setTitleColor(.orange, for: .normal)
+        button.setTitleColor(.orange, for: .highlighted)
         button.titleLabel?.font = .boldSystemFont(ofSize: 60)
         return button
     }()
@@ -55,7 +55,7 @@ extension SplashViewController {
     }
     
     private func configureView() {
-        view.backgroundColor = .orange
+        view.backgroundColor = .white.withAlphaComponent(0.9)
     }
     
     private func configureViewModel() {
