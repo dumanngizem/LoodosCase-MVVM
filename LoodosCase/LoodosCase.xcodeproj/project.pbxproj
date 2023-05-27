@@ -23,6 +23,13 @@
 		63AE26282A221BDC00B75709 /* NetworkExecuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE26272A221BDC00B75709 /* NetworkExecuter.swift */; };
 		63AE262A2A221C2300B75709 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE26292A221C2300B75709 /* NetworkError.swift */; };
 		63AE262E2A221EF000B75709 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE262D2A221EF000B75709 /* String+Extensions.swift */; };
+		63AE26312A2229F700B75709 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE26302A2229F700B75709 /* HomeViewController.swift */; };
+		63AE26332A222A0E00B75709 /* HomeViewContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE26322A222A0E00B75709 /* HomeViewContracts.swift */; };
+		63AE26352A222A1F00B75709 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE26342A222A1F00B75709 /* HomeViewModel.swift */; };
+		63AE26372A222A2F00B75709 /* HomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE26362A222A2F00B75709 /* HomeViewBuilder.swift */; };
+		63AE263B2A22323900B75709 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE263A2A22323900B75709 /* LottieView.swift */; };
+		63AE263E2A2232F600B75709 /* loading-lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 63AE263D2A2232F600B75709 /* loading-lottie.json */; };
+		63AE26432A2236EA00B75709 /* EntryKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE26422A2236EA00B75709 /* EntryKitHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +50,13 @@
 		63AE26272A221BDC00B75709 /* NetworkExecuter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExecuter.swift; sourceTree = "<group>"; };
 		63AE26292A221C2300B75709 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		63AE262D2A221EF000B75709 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		63AE26302A2229F700B75709 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		63AE26322A222A0E00B75709 /* HomeViewContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewContracts.swift; sourceTree = "<group>"; };
+		63AE26342A222A1F00B75709 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		63AE26362A222A2F00B75709 /* HomeViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBuilder.swift; sourceTree = "<group>"; };
+		63AE263A2A22323900B75709 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		63AE263D2A2232F600B75709 /* loading-lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "loading-lottie.json"; sourceTree = "<group>"; };
+		63AE26422A2236EA00B75709 /* EntryKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryKitHelper.swift; sourceTree = "<group>"; };
 		D812664DC942CC24B60DF788 /* Pods-LoodosCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosCase.debug.xcconfig"; path = "Target Support Files/Pods-LoodosCase/Pods-LoodosCase.debug.xcconfig"; sourceTree = "<group>"; };
 		E72055BB611B78F9F5390BA9 /* Pods-LoodosCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosCase.release.xcconfig"; path = "Target Support Files/Pods-LoodosCase/Pods-LoodosCase.release.xcconfig"; sourceTree = "<group>"; };
 		F005549E47B0825C6693EB52 /* Pods_LoodosCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoodosCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +96,7 @@
 		634A0B1E2A21E9EE00B751E4 /* LoodosCase */ = {
 			isa = PBXGroup;
 			children = (
+				63AE263F2A2236C100B75709 /* Helpers */,
 				63AE262C2A221EE300B75709 /* Extensions */,
 				63AE262B2A221DC400B75709 /* UIComponents */,
 				63AE261F2A221B5B00B75709 /* DataProvider */,
@@ -97,6 +112,7 @@
 		634A0B332A21ED5F00B751E4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				63AE263C2A2232DB00B75709 /* Lotties */,
 				634A0B2A2A21E9EF00B751E4 /* LaunchScreen.storyboard */,
 				634A0B282A21E9EF00B751E4 /* Assets.xcassets */,
 			);
@@ -115,6 +131,7 @@
 		634A0B352A21F03F00B751E4 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				63AE262F2A2229E900B75709 /* Home */,
 				634A0B382A21F14D00B751E4 /* Splash */,
 			);
 			path = Screens;
@@ -169,6 +186,7 @@
 		63AE262B2A221DC400B75709 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				63AE26382A22320C00B75709 /* UIViews */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -179,6 +197,58 @@
 				63AE262D2A221EF000B75709 /* String+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		63AE262F2A2229E900B75709 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				63AE26302A2229F700B75709 /* HomeViewController.swift */,
+				63AE26322A222A0E00B75709 /* HomeViewContracts.swift */,
+				63AE26342A222A1F00B75709 /* HomeViewModel.swift */,
+				63AE26362A222A2F00B75709 /* HomeViewBuilder.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		63AE26382A22320C00B75709 /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				63AE26392A22321500B75709 /* LottieView */,
+			);
+			path = UIViews;
+			sourceTree = "<group>";
+		};
+		63AE26392A22321500B75709 /* LottieView */ = {
+			isa = PBXGroup;
+			children = (
+				63AE263A2A22323900B75709 /* LottieView.swift */,
+			);
+			name = LottieView;
+			path = "LottieVİew";
+			sourceTree = "<group>";
+		};
+		63AE263C2A2232DB00B75709 /* Lotties */ = {
+			isa = PBXGroup;
+			children = (
+				63AE263D2A2232F600B75709 /* loading-lottie.json */,
+			);
+			path = Lotties;
+			sourceTree = "<group>";
+		};
+		63AE263F2A2236C100B75709 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				63AE26402A2236CC00B75709 /* EntryKit */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		63AE26402A2236CC00B75709 /* EntryKit */ = {
+			isa = PBXGroup;
+			children = (
+				63AE26422A2236EA00B75709 /* EntryKitHelper.swift */,
+			);
+			path = EntryKit;
 			sourceTree = "<group>";
 		};
 		8EB0220C14B2CD866B44636A /* Frameworks */ = {
@@ -261,6 +331,7 @@
 				634A0B2C2A21E9EF00B751E4 /* LaunchScreen.storyboard in Resources */,
 				634A0B292A21E9EF00B751E4 /* Assets.xcassets in Resources */,
 				632BD11D2A220A56002331D0 /* GoogleService-Info.plist in Resources */,
+				63AE263E2A2232F600B75709 /* loading-lottie.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				634A0B3E2A21F1B700B751E4 /* SplashViewModel.swift in Sources */,
+				63AE263B2A22323900B75709 /* LottieView.swift in Sources */,
 				63AE261E2A22190200B75709 /* Connection.swift in Sources */,
 				634A0B3A2A21F17800B751E4 /* SplashViewController.swift in Sources */,
 				63AE26282A221BDC00B75709 /* NetworkExecuter.swift in Sources */,
@@ -321,9 +393,14 @@
 				634A0B202A21E9EE00B751E4 /* AppDelegate.swift in Sources */,
 				63AE26242A221BA200B75709 /* HttpMethod.swift in Sources */,
 				634A0B222A21E9EE00B751E4 /* SceneDelegate.swift in Sources */,
+				63AE26432A2236EA00B75709 /* EntryKitHelper.swift in Sources */,
 				634A0B3C2A21F1A800B751E4 /* SplashViewContracts.swift in Sources */,
+				63AE26332A222A0E00B75709 /* HomeViewContracts.swift in Sources */,
 				63AE26222A221B7700B75709 /* NetworkContracts.swift in Sources */,
+				63AE26372A222A2F00B75709 /* HomeViewBuilder.swift in Sources */,
 				63AE262A2A221C2300B75709 /* NetworkError.swift in Sources */,
+				63AE26312A2229F700B75709 /* HomeViewController.swift in Sources */,
+				63AE26352A222A1F00B75709 /* HomeViewModel.swift in Sources */,
 				63AE26262A221BBF00B75709 /* HttpHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
