@@ -102,7 +102,7 @@ extension HomeViewController: UISearchBarDelegate {
 extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        viewModel.didSelectRowAt(indexPath)
     }
 }
 

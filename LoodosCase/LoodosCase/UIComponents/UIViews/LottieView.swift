@@ -34,7 +34,7 @@ extension LottieView {
     private func addAnimationView() {
         addSubview(animationView)
         animationView.centerInSuperview()
-        animationView.size(.init(width: 150, height: 150))
+        animationView.size(.init(width: 350, height: 350))
     }
 }
 
@@ -42,13 +42,13 @@ extension LottieView {
 extension LottieView {
     
     private func configureContents() {
-        backgroundColor = .orange
+        backgroundColor = .white.withAlphaComponent(0.9)
         size(.init(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
         configureAnimationView()
     }
     
     private func configureAnimationView() {
-        animationView.animation = LottieAnimation.named("loading-lottie")
+        animationView.animation = LottieAnimation.named("loading-animation")
         animationView.contentMode = .scaleAspectFit
         animationView.loopMode = .loop
         animationView.animationSpeed = 0.75

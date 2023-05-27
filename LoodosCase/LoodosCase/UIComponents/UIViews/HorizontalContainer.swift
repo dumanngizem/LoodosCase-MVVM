@@ -14,14 +14,16 @@ class HorizontalContainer: UIView {
         let label = UILabel()
         label.font = .systemFont(ofSize: 14, weight: .medium)
         label.textColor = .black
+        label.textAlignment = .left
         return label
     }()
     
     private let valueLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 12, weight: .medium)
+        label.font = .systemFont(ofSize: 10, weight: .medium)
         label.textColor = .gray
         label.textAlignment = .right
+        label.numberOfLines = 0
         return label
     }()
     
@@ -73,7 +75,7 @@ extension HorizontalContainer {
 extension HorizontalContainer {
     
     private func configureContents() {
-        height(32)
+        height(42)
         layer.cornerRadius = 10
         backgroundColor = .white
     }
