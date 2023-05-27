@@ -17,6 +17,11 @@
 		634A0B3C2A21F1A800B751E4 /* SplashViewContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A0B3B2A21F1A800B751E4 /* SplashViewContracts.swift */; };
 		634A0B3E2A21F1B700B751E4 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634A0B3D2A21F1B700B751E4 /* SplashViewModel.swift */; };
 		63AE261E2A22190200B75709 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE261D2A22190200B75709 /* Connection.swift */; };
+		63AE26222A221B7700B75709 /* NetworkContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE26212A221B7700B75709 /* NetworkContracts.swift */; };
+		63AE26242A221BA200B75709 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE26232A221BA200B75709 /* HttpMethod.swift */; };
+		63AE26262A221BBF00B75709 /* HttpHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE26252A221BBF00B75709 /* HttpHeader.swift */; };
+		63AE26282A221BDC00B75709 /* NetworkExecuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE26272A221BDC00B75709 /* NetworkExecuter.swift */; };
+		63AE262A2A221C2300B75709 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE26292A221C2300B75709 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		634A0B3B2A21F1A800B751E4 /* SplashViewContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewContracts.swift; sourceTree = "<group>"; };
 		634A0B3D2A21F1B700B751E4 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		63AE261D2A22190200B75709 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		63AE26212A221B7700B75709 /* NetworkContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkContracts.swift; sourceTree = "<group>"; };
+		63AE26232A221BA200B75709 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		63AE26252A221BBF00B75709 /* HttpHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeader.swift; sourceTree = "<group>"; };
+		63AE26272A221BDC00B75709 /* NetworkExecuter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkExecuter.swift; sourceTree = "<group>"; };
+		63AE26292A221C2300B75709 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		D812664DC942CC24B60DF788 /* Pods-LoodosCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosCase.debug.xcconfig"; path = "Target Support Files/Pods-LoodosCase/Pods-LoodosCase.debug.xcconfig"; sourceTree = "<group>"; };
 		E72055BB611B78F9F5390BA9 /* Pods-LoodosCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosCase.release.xcconfig"; path = "Target Support Files/Pods-LoodosCase/Pods-LoodosCase.release.xcconfig"; sourceTree = "<group>"; };
 		F005549E47B0825C6693EB52 /* Pods_LoodosCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoodosCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +80,7 @@
 		634A0B1E2A21E9EE00B751E4 /* LoodosCase */ = {
 			isa = PBXGroup;
 			children = (
+				63AE261F2A221B5B00B75709 /* DataProvider */,
 				63AE261B2A2218A400B75709 /* Utilities */,
 				634A0B352A21F03F00B751E4 /* Screens */,
 				634A0B342A21ED9500B751E4 /* AppDelegate */,
@@ -129,6 +140,26 @@
 				63AE261D2A22190200B75709 /* Connection.swift */,
 			);
 			path = Connection;
+			sourceTree = "<group>";
+		};
+		63AE261F2A221B5B00B75709 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				63AE26202A221B6500B75709 /* Core */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		63AE26202A221B6500B75709 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				63AE26212A221B7700B75709 /* NetworkContracts.swift */,
+				63AE26232A221BA200B75709 /* HttpMethod.swift */,
+				63AE26252A221BBF00B75709 /* HttpHeader.swift */,
+				63AE26272A221BDC00B75709 /* NetworkExecuter.swift */,
+				63AE26292A221C2300B75709 /* NetworkError.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		8EB0220C14B2CD866B44636A /* Frameworks */ = {
@@ -266,9 +297,14 @@
 				634A0B3E2A21F1B700B751E4 /* SplashViewModel.swift in Sources */,
 				63AE261E2A22190200B75709 /* Connection.swift in Sources */,
 				634A0B3A2A21F17800B751E4 /* SplashViewController.swift in Sources */,
+				63AE26282A221BDC00B75709 /* NetworkExecuter.swift in Sources */,
 				634A0B202A21E9EE00B751E4 /* AppDelegate.swift in Sources */,
+				63AE26242A221BA200B75709 /* HttpMethod.swift in Sources */,
 				634A0B222A21E9EE00B751E4 /* SceneDelegate.swift in Sources */,
 				634A0B3C2A21F1A800B751E4 /* SplashViewContracts.swift in Sources */,
+				63AE26222A221B7700B75709 /* NetworkContracts.swift in Sources */,
+				63AE262A2A221C2300B75709 /* NetworkError.swift in Sources */,
+				63AE26262A221BBF00B75709 /* HttpHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
