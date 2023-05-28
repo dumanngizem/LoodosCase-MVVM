@@ -16,10 +16,9 @@ final class SplashViewModel: SplashViewModelContracts {
         internetConnection()
     }
     
-    func loodosButtonTapped() {
+    func pushHome() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) { [weak self] in
             guard let self = self else { return }
-            EntryKitHelper.dismiss()
             self.routes?.pushHome()
         }
     }

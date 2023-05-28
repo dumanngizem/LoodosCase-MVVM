@@ -14,12 +14,12 @@ class SplashViewController: UIViewController {
     var viewModel: SplashViewModelContracts = SplashViewModel()
     var remoteConfig: RemoteConfig?
     
-    private let loodosButton: UIButton = {
-       let button = UIButton()
-        button.setTitleColor(.orange, for: .normal)
-        button.setTitleColor(.orange, for: .highlighted)
-        button.titleLabel?.font = .boldSystemFont(ofSize: 60)
-        return button
+    private let loodosLabel: UILabel = {
+       let label = UILabel()
+        label.textColor = .orange
+        label.font = .boldSystemFont(ofSize: 40)
+        label.textAlignment = .center
+        return label
     }()
     
     override func viewDidLoad() {
@@ -27,7 +27,6 @@ class SplashViewController: UIViewController {
         addSubViews()
         configureContents()
         viewModel.viewDidLoad()
-        addTargets()
     }
 }
 
@@ -35,13 +34,12 @@ class SplashViewController: UIViewController {
 extension SplashViewController {
     
     private func addSubViews() {
-        addLoodosButton()
+        addLodosLabel()
     }
     
-    private func addLoodosButton() {
-        view.addSubview(loodosButton)
-        loodosButton.centerInSuperview()
-        loodosButton.size(.init(width: 200, height: 150))
+    private func addLodosLabel() {
+        view.addSubview(loodosLabel)
+        loodosLabel.centerInSuperview()
     }
 }
 
@@ -71,24 +69,6 @@ extension SplashViewController {
     }
 }
 
-// MARK: - Targets
-extension SplashViewController {
-    
-    private func addTargets() {
-        loodosButton.addTarget(self, action: #selector(loodosButtonTapped), for: .touchUpInside)
-    }
-}
-
-// MARK: - Actions
-extension SplashViewController {
-    @objc
-    private func loodosButtonTapped() {
-        loodosButton.setTitle("", for: .normal)
-        EntryKitHelper.showLoading()
-        viewModel.loodosButtonTapped()
-    }
-}
-
 // MARK: - SplashViewModelOutput
 extension SplashViewController: SplashViewModelOutput {
     func remoteConfigration() {
@@ -101,7 +81,8 @@ extension SplashViewController: SplashViewModelOutput {
                     guard error == nil else { return }
                     let value = self.remoteConfig?.configValue(forKey: "lds_splash_text")
                     DispatchQueue.main.async {
-                        self.loodosButton.setTitle(value?.stringValue, for: .normal)
+                        self.loodosLabel.text = value?.stringValue
+                        self.viewModel.pushHome()
                     }
                 })
             } else {

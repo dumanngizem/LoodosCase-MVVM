@@ -29,6 +29,7 @@ final class HomeViewModel: HomeViewModelContracts {
     func textDidChange(text: String) {
         if !text.isEmpty {
             self.searchText = text
+            self.currentPage = 1
             getMovies(search: text)
         }
     }
@@ -48,6 +49,10 @@ extension HomeViewModel {
  
     var numberOfRowsInSection: Int {
         return moviesData?.count ?? 0
+    }
+    
+    var isReponse: Bool {
+        return movieData?.response == "True" ? true : false
     }
 }
 

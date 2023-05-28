@@ -13,7 +13,7 @@ protocol SplashViewModelContracts {
     var output: SplashViewModelOutput? { get set }
    
     func viewDidLoad()
-    func loodosButtonTapped()
+    func pushHome()
 }
 
 // MARK: - Routes

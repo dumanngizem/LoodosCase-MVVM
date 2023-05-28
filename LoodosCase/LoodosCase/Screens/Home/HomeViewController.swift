@@ -13,7 +13,7 @@ final class HomeViewController: UIViewController {
     var viewModel: HomeViewModelContracts = HomeViewModel(repository: MoviesRepository(moviesServices: MoviesServices()))
     
     private let searchBar: UISearchBar = {
-       let searchBar = UISearchBar()
+        let searchBar = UISearchBar()
         return searchBar
     }()
     

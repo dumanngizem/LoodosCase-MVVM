@@ -125,7 +125,7 @@ extension MovieDetailViewController {
     }
     
     private func configureViewController() {
-        view.backgroundColor = .white.withAlphaComponent(0.9)
+        view.backgroundColor = .white
     }
     
     private func configureViewModel() {
