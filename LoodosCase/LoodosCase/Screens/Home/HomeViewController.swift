@@ -7,6 +7,7 @@
 
 import UIKit
 import TinyConstraints
+import FirebaseMessaging
 
 final class HomeViewController: UIViewController {
 
@@ -30,6 +31,7 @@ final class HomeViewController: UIViewController {
         addSubViews()
         configureContents()
         viewModel.viewDidLoad()
+ 
     }
 }
 
@@ -121,7 +123,7 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if cell as? MoviesCell != nil && viewModel.numberOfRowsInSection - 3 == indexPath.row {
+        if cell as? MoviesCell != nil && viewModel.isReponse && viewModel.numberOfRowsInSection - 3 == indexPath.row {
             viewModel.swipeConfigration(search: viewModel.searchText)
         }
     }

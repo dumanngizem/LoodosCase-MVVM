@@ -35,7 +35,6 @@ extension MoviesDetailViewModel {
     
 }
 
-
 // MARK: - Requests
 extension MoviesDetailViewModel {
     

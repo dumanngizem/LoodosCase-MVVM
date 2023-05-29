@@ -17,7 +17,7 @@ class SplashViewController: UIViewController {
     private let loodosLabel: UILabel = {
        let label = UILabel()
         label.textColor = .orange
-        label.font = .boldSystemFont(ofSize: 40)
+        label.font = .boldSystemFont(ofSize: 60)
         label.textAlignment = .center
         return label
     }()

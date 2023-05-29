@@ -14,6 +14,7 @@ protocol HomeViewModelContracts {
     var repository: MoviesRepositoryContracts { get set }
    
     var numberOfRowsInSection: Int { get }
+    var isReponse: Bool { get }
     var moviesData: [SearchResponse]? { get set }
     var searchText: String { get set }
     
