@@ -13,5 +13,8 @@ target 'LoodosCase' do
   pod 'FirebaseFirestore'
   pod 'FirebaseCore'
   pod 'FirebaseMessaging'
-
+  pod 'FirebaseRemoteConfig'
+  pod 'lottie-ios'
+  pod 'SwiftEntryKit', '2.0.0'
+  pod 'FirebaseAnalytics'
 end
